@@ -18,7 +18,7 @@ ARG VERSION
 WORKDIR /
 
 RUN apk add git && \
-    git clone --depth 1 --branch "${VERSION}" https://github.com/gregtwallace/certwarden-client.git /src && \
+    git clone --depth 1 --branch "${VERSION}" https://github.com/Dimariqe/certwarden-client.git /src && \
     cd /src && \
     go build -o ./certwarden-client ./pkg/main
 
