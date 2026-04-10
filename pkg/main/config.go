@@ -196,9 +196,9 @@ func configureApp() (*app, error) {
 
 	// CW_CLIENT_SERVER_ADDRESS
 	app.cfg.ServerAddress = os.Getenv("CW_CLIENT_SERVER_ADDRESS")
-	if app.cfg.ServerAddress == "" || !strings.HasPrefix(app.cfg.ServerAddress, "https://") {
-		return app, errors.New("CW_CLIENT_SERVER_ADDRESS is required and must start with https://")
-	}
+	// if app.cfg.ServerAddress == "" || !strings.HasPrefix(app.cfg.ServerAddress, "https://") {
+	// 	return app, errors.New("CW_CLIENT_SERVER_ADDRESS is required and must start with https://")
+	// }
 
 	// Global: Optional
 
